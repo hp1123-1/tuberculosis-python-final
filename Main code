@@ -17,7 +17,7 @@ def hospital(df,name: str):
       return []
     return indlist
 """
-The following code is meant to output a map of the cities located in the csv file of hospital
+The following code is meant to output a map of the cities located in the csv file of hospital and show the average gross patient revenue for the city by a gradient.
 """
 from geopy.exc import GeocoderTimedOut
 from geopy.geocoders import Nominatim
@@ -31,6 +31,11 @@ def map(df,location):
                      size="pop", # size of markers, "pop" is one of the columns of gapminder
                      )
   fig.show()
+
+"""
+The missing code is meant to create a histogram of the average number of hospital beds for the hospitals in the city
+"""
+
 
   #this portion of the code takes in user input, asking questions to determine the state of the users condition and responding with an output that includes the nearest hospitals based on the city they inputted using the hospital function defined previously.
 name=input("What is your name?")
